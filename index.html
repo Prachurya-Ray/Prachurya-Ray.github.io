@@ -1,15 +1,346 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Prachurya Ray</title>
-		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
-		<link rel="icon" href="/images/letter-p_10003722.png">
-	</head>
-	<body>
-		<h1>Hello World
-			
-		</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-200">
+    <!-- navigation bar -->
+    <nav
+      class="w-full h-16 bg-linear-to-l from-sky-900 to-indigo-500 sm:px-24 px-4 py-4 flex justify-between items-center sticky top-0 z-50"
+    >
+      <h1 class="logo text-white sm:text-2xl text-lg font-bold cursor-progress">
+        Prachurya
+      </h1>
+      <!-- <h1 class="logo text-white sm:text-2xl text-lg font-bold cursor-progress">
+        Pr.
+      </h1> -->
+      <div class="menu sm:flex gap-10 hidden">
+        <div class="text-white cursor-pointer font-semibold home">
+          <a href="#home">Home</a>
+        </div>
+        <div class="text-white cursor-pointer font-semibold about">
+          <a href="#about-me">About</a>
+        </div>
+        <div class="text-white cursor-pointer font-semibold project">
+          <a href="#project">Project</a>
+        </div>
+        <div class="text-white cursor-pointer font-semibold contact">
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="hamburger block sm:hidden cursor-pointer text-xl text-white">
+        ☰
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="relative min-h-[calc(100vh-4rem)]" id="home">
+      <!-- Background image -->
+      <div
+        class="absolute inset-0 z-0 bg-[url(./assets/faraaz-zuberi-YoIq2GyYcAU-unsplash.jpg)] bg-cover bg-center bg-no-repeat"
+      ></div>
+
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 z-10 bg-black/50"></div>
+
+      <!-- Content -->
+      <div
+        class="relative z-20 flex justify-center items-center text-white h-[80vh] flex-col gap-5"
+      >
+        <h1 class="text-3xl font-semibold px-2">
+          Hello👋 I'm
+          <span class="font-bold text-5xl cursor-progress">
+            Prachurya Ray
+            <span
+              class="inline-flex h-4 w-4 animate-ping rounded-full bg-sky-300"
+            ></span>
+          </span>
+        </h1>
+        <h1 class="text-2xl hidden sm:block italic">
+          A Full-Stack Developer !
+        </h1>
+      </div>
+
+      <div class="relative bottom-20 z-30 flex justify-center items-center">
+        <button
+          class="bg-blue-500 px-4 py-2 rounded-full text-white text-center font-semibold cursor-pointer hover:bg-blue-700 animate-bounce hover:shadow-xl hover:shadow-cyan-500"
+        >
+          <a href="#project">View My Work</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- about me -->
+    <section
+      class="min-h-[calc(100vh-4rem)] bg-gray-200 sm:mb-16 sm:py-4 py-8 sm:px-28 px-14 gap-16 text-justify flex items-center justify-between flex-wrap md:flex-nowrap"
+      id="about-me"
+    >
+      <div class="about-me-text flex flex-col gap-16 items-center">
+        <h1 class="font-serif mt-8 text-3xl">About Me.</h1>
+        <p class="font-serif">
+          I’m Prachurya Ray, a passionate Full Stack Developer with a
+          postgraduate degree in MCA from KIIT University. I’ve built multiple
+          full-fledged projects, including a Restaurant Billing System,
+          showcasing my skills in MERN stack, UI/UX, and scalable application
+          development. I also have experience as an intern at Clickuptel and
+          intern at KIIT IT Cell. I’m continuously learning and striving to
+          build innovative, production-grade applications—especially in areas
+          intersecting with AI and modern web technologies.
+        </p>
+        <div class="tech-stacks flex flex-wrap items-center gap-4">
+          <img src="./assets/html.jpg" alt="" class="h-16 w-16 rounded-full" />
+          <img src="./assets/css.jpeg" alt="" class="h-16 w-16 rounded-full" />
+          <img src="./assets/js.png" alt="" class="h-16 w-16 rounded-full" />
+          <img src="./assets/react.png" alt="" class="h-16 w-16 rounded-full" />
+          <img
+            src="./assets/nodejs.png"
+            alt=""
+            class="h-16 w-16 rounded-full"
+          />
+          <img
+            src="./assets/expressjs.png"
+            alt=""
+            class="h-16 w-16 rounded-full"
+          />
+        </div>
+      </div>
+      <img
+        src="/assets/my-photo.jpg"
+        alt=""
+        class="sm:h-78 sm:w-78 h-62 w-62 rounded-full cursor-pointer shadow-2xl shadow-black-1000 hover:scale-105"
+      />
+    </section>
+
+    <!-- project section  -->
+    <section
+      id="project"
+      class="min-h-[calc(100vh-4rem)] flex flex-col items-center bg-gray-700 p-8"
+    >
+      <h1 class="font-serif text-3xl py-12 text-white">Projects</h1>
+
+      <!-- cards  -->
+      <div
+        class="cards grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-center items-center gap-16 p-8 sm:px-2 sm:mb-32"
+      >
+        <div
+          class="project-card group p-2 bg-white relative flex flex-col items-center gap-2 h-56 w-42 rounded-lg hover:border-1 hover:border-gray-300 hover:shadow-xl hover:shadow-gray-300 hover:scale-105 transition-all duration-700"
+        >
+          <img
+            src="./assets/faraaz-zuberi-YoIq2GyYcAU-unsplash.jpg"
+            class="rounded-lg group-hover:h-2/5 w-full h-3/5"
+            alt=""
+          />
+          <h3 class="font-serif cursor-default">Restaurant Billing</h3>
+          <p
+            class="text-xs/2 px-2 leading-3 italic group-hover:block hidden cursor-default"
+          >
+            React, NodeJS, ExpressJS, AntD, Tailwind
+          </p>
+          <div class="project-card-btns flex gap-6 absolute bottom-4 flex-wrap">
+            <button
+              class="px-2 border-1 border-red-500 bg-red-500 text-white hover:text-black hover:bg-red-100 rounded-md py-0.5 hover:cursor-pointer"
+            >
+              <a href="">Live</a>
+            </button>
+            <button
+              class="px-2 border-1 border-green-500 bg-green-500 text-white hover:text-black hover:bg-green-100 rounded-md py-0.5 hover:cursor-pointer"
+            >
+              <a href="">Code</a>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="project-card group p-2 bg-white relative flex flex-col items-center gap-2 h-56 w-42 rounded-lg hover:border-1 hover:border-gray-300 hover:shadow-xl hover:shadow-gray-300 hover:scale-105 transition-all duration-700"
+        >
+          <img
+            src="./assets/faraaz-zuberi-YoIq2GyYcAU-unsplash.jpg"
+            class="rounded-lg group-hover:h-2/5 w-full h-3/5"
+            alt=""
+          />
+          <h3 class="font-serif cursor-default">Restaurant Billing</h3>
+          <p
+            class="text-xs/2 px-2 leading-3 italic group-hover:block hidden cursor-default"
+          >
+            React, NodeJS, ExpressJS, AntD, Tailwind
+          </p>
+          <div class="project-card-btns flex gap-6 absolute bottom-4 flex-wrap">
+            <button
+              class="px-2 border-1 border-red-500 bg-red-500 text-white hover:text-black hover:bg-red-100 rounded-md py-0.5 hover:cursor-pointer"
+            >
+              <a href="">Live</a>
+            </button>
+            <button
+              class="px-2 border-1 border-green-500 bg-green-500 text-white hover:text-black hover:bg-green-100 rounded-md py-0.5 hover:cursor-pointer"
+            >
+              <a href="">Code</a>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="project-card group p-2 bg-white relative flex flex-col items-center gap-2 h-56 w-42 rounded-lg hover:border-1 hover:border-gray-300 hover:shadow-xl hover:shadow-gray-300 hover:scale-105 transition-all duration-700"
+        >
+          <img
+            src="./assets/faraaz-zuberi-YoIq2GyYcAU-unsplash.jpg"
+            class="rounded-lg group-hover:h-2/5 w-full h-3/5"
+            alt=""
+          />
+          <h3 class="font-serif cursor-default">Restaurant Billing</h3>
+          <p
+            class="text-xs/2 px-2 leading-3 italic group-hover:block hidden cursor-default"
+          >
+            React, NodeJS, ExpressJS, AntD, Tailwind
+          </p>
+          <div class="project-card-btns flex gap-6 absolute bottom-4 flex-wrap">
+            <button
+              class="px-2 border-1 border-red-500 bg-red-500 text-white hover:text-black hover:bg-red-100 rounded-md py-0.5 hover:cursor-pointer"
+            >
+              <a href="">Live</a>
+            </button>
+            <button
+              class="px-2 border-1 border-green-500 bg-green-500 text-white hover:text-black hover:bg-green-100 rounded-md py-0.5 hover:cursor-pointer"
+            >
+              <a href="">Code</a>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="project-card group p-2 bg-white relative flex flex-col items-center gap-2 h-56 w-42 rounded-lg hover:border-1 hover:border-gray-300 hover:shadow-xl hover:shadow-gray-300 hover:scale-105 transition-all duration-700"
+        >
+          <img
+            src="./assets/faraaz-zuberi-YoIq2GyYcAU-unsplash.jpg"
+            class="rounded-lg group-hover:h-2/5 w-full h-3/5"
+            alt=""
+          />
+          <h3 class="font-serif cursor-default">Restaurant Billing</h3>
+          <p
+            class="text-xs/2 px-2 leading-3 italic group-hover:block hidden cursor-default"
+          >
+            React, NodeJS, ExpressJS, AntD, Tailwind
+          </p>
+          <div class="project-card-btns flex gap-6 absolute bottom-4 flex-wrap">
+            <button
+              class="px-2 border-1 border-red-500 bg-red-500 text-white hover:text-black hover:bg-red-100 rounded-md py-0.5 hover:cursor-pointer"
+            >
+              <a href="">Live</a>
+            </button>
+            <button
+              class="px-2 border-1 border-green-500 bg-green-500 text-white hover:text-black hover:bg-green-100 rounded-md py-0.5 hover:cursor-pointer"
+            >
+              <a href="">Code</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact  -->
+    <section
+      id="contact"
+      class="min-h-[calc(100vh-4rem)] bg-gray-200 flex justify-center pt-6"
+    >
+      <form
+        action=""
+        class="contact-form py-6 mt-16 flex flex-col gap-3 items-center w-2/5 rounded-lg bg-sky-900 shadow-2xl shadow-gray-700"
+      >
+        <h2 class="text-white font-serif text-2xl">Contact Us</h2>
+        <div class="name w-2/3">
+          <label for="your-name" class="text-white text-lg">Name:</label>
+          <input
+            type="text"
+            required
+            class="bg-white rounded w-full h-8 pl-2"
+            placeholder="Enter Your Name"
+            name="your-name"
+            id=""
+          />
+        </div>
+        <div class="mail w-2/3">
+          <label for="email" class="text-white text-lg">Email:</label>
+          <input
+            type="text"
+            required
+            class="bg-white w-full rounded w-4/5 h-8 pl-2"
+            placeholder="Enter Your Email"
+            name=""
+            id="email"
+          />
+        </div>
+        <div class="message w-2/3">
+          <label for="text-msg" class="text-white text-lg">Message:</label>
+          <textarea
+            name=""
+            class="bg-white w-full rounded w-4/5 h-28 pl-2"
+            placeholder="Enter Your Message"
+            id="text-msg"
+          ></textarea>
+        </div>
+        <button
+          class="rounded bg-sky-500 text-white w-2/3 h-10 text-lg font-bold cursor-pointer hover:bg-blue-500 my-2"
+        >
+          Send
+        </button>
+      </form>
+    </section>
+
+    <!-- social media  -->
+    <section
+      id="social-links"
+      class="min-h-[calc(100vh-8rem)] bg-gray-200 flex justify-center flex flex-col justify-center items-center"
+    >
+      <h1 class="font-serif sm:text-3xl py-12 text-black px-2">
+        Connect With Me -
+      </h1>
+      <div class="links flex flex-wrap px-4 justify-start items-center gap-12">
+        <a
+          href="https://www.linkedin.com/in/prachurya-ray-001/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./assets/linkedin.png"
+            alt=""
+            class="rounded-full h-24 w-24 cursor-pointer"
+          />
+        </a>
+        <a
+          href="https://x.com/PrachuryaRay"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./assets/twitter.png"
+            alt=""
+            class="rounded-full h-24 w-24 cursor-pointer"
+          />
+        </a>
+        <a
+          href="https://github.com/Prachurya-Ray"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./assets/github.png"
+            alt=""
+            class="rounded-full h-24 w-24 cursor-pointer"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black text-white flex justify-center items-center h-16">
+      <p>Made with ❤️ by Prachurya</p>
+    </footer>
+  </body>
 </html>
