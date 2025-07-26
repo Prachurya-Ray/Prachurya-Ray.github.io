@@ -7,6 +7,4 @@ A responsive and customizable personal profile page built using modern web techn
 - Fully responsive layout
 - Editable sections (bio, skills, projects, contact)
 - Social media integration
-- Dark/light theme toggle (optional)
 - Clean, modern UI/UX
-- Easy to deploy (GitHub Pages, Vercel, Netlify, etc.)
