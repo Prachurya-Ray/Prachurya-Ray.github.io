@@ -1,6 +1,6 @@
 # 🌐 Prachurya Ray
 
-A responsive and customizable personal profile page built using modern web technologies. Showcase my bio, social links, portfolio, and more — all in one place.
+A fully responsive and customizable personal profile page built using modern web technologies. Effortlessly showcase your bio, social media links, portfolio/projects, and much more — all in one sleek and centralized space. Perfect for developers, creatives, and professionals looking to make a lasting first impression.
 
 ## ✨ Features
 
